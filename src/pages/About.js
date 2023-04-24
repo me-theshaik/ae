@@ -59,7 +59,6 @@ const Content = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   padding: 50px;
-  justify-content: space-around;
   border-radius: 25px;
   left: 10%;
   top: 15%;
