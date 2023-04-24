@@ -65,10 +65,12 @@ const Content = styled.div`
   top: 15%;
   h2{
     color: #c2272d;
+    text-align: center;
   }
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 60%;
     top: 30%;
+    padding: 25px;
     h2{
       font-size: 14px; 
     }
