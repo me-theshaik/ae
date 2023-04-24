@@ -1,21 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { useLocation } from 'react-router-dom';
 
 function Header() {
-  const location = useLocation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
-  };
-
-  const [activeLink, setActiveLink] = useState("");
-
-  const handleClick = (link) => {
-    setActiveLink(link);
   };
   return (
     <Container>
@@ -27,23 +19,23 @@ function Header() {
           <span></span>
         </MenuButton>
         <NavList isOpen={isMenuOpen}>
-          <NavLink to="/" onClick={toggleMenu} activeClassName="active">
-            HOME
-          </NavLink>
-          <NavLink to="/contest" onClick={toggleMenu} activeClassName="active">
-            CONTEST
-          </NavLink>
-          <NavLink to="/about" onClick={toggleMenu} activeClassName="active">
-            ABOUT
-          </NavLink>
-          <NavLink to="/contact" onClick={toggleMenu} activeClassName="active">
-            CONTACT
-          </NavLink>
-          <NavLink to="/guidelines" onClick={toggleMenu} activeClassName="active">
-            GUIDELINES
-          </NavLink>
-        </NavList>
-        <SubmitButton to="/contest" >Submit Application</SubmitButton>
+            <NavLink to="/" onClick={toggleMenu}>
+              HOME
+            </NavLink>
+            <NavLink to="/contest" onClick={toggleMenu}>
+              CONTEST
+            </NavLink>
+            <NavLink to="/about" onClick={toggleMenu}>
+              ABOUT
+            </NavLink>
+            <NavLink to="/contact" onClick={toggleMenu}>
+              CONTACT
+            </NavLink>
+            <NavLink to="/guidelines" onClick={toggleMenu}>
+              GUIDELINES
+            </NavLink>
+          </NavList>
+          <SubmitButton to="/contest" >Submit Application</SubmitButton>
       </Nav>
     </Container>
   )

@@ -63,6 +63,7 @@ const Content = styled.div`
   border-radius: 25px;
   text-align: justify;
   top: 15%;
+  margin-bottom: 50px;
   h2{
     color: #c2272d;
     text-align: center;
