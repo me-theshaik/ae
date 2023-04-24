@@ -114,13 +114,13 @@ const Content = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 60%;
-    top: 30%;
+    top: 20%;
     padding: 25px;
     h2{
-      font-size: 14px; 
+      font-size: 16px; 
     }
     p{
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 `;
