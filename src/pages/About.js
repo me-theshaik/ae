@@ -12,6 +12,11 @@ function About() {
           <source src={video} type="video/mp4" />
         </BackgroundVideo>
         <Content>
+          <h2>ABOUT ARABIAN ENGINEERING CONTEST & HACKATHONS</h2>
+          <p>Welcome to the Arabian Engineering Contests and International Hackathons website! We are thrilled to host a series of exciting events that bring together the brightest minds in engineering and technology from around the world.</p>
+          <p>Our organization is committed to promoting innovation and excellence in the field of engineering. By participating in our contests and hackathons, participants can showcase their skills and creativity, connect with like-minded professionals, and gain valuable experience that can propel their careers to new heights.</p>
+          <p>We are proud to collaborate with a leading staffing and recruitment companies in Dubai, Saudi Arabia, Oman, Qatar and many more arabian countries, to provide participants with an unparalleled opportunity to work at multinational companies across the Arabian region. Our goal is to connect talented individuals with top-tier organizations that offer rewarding careers and excellent growth prospects.</p>
+          <p>Whether you are a student, a recent graduate, or a seasoned professional, we invite you to join us in our mission to advance the field of engineering and shape the future of technology. Explore our website to learn more about our upcoming events and how you can participate. We look forward to hearing from you and seeing you at our next contest or hackathon!</p>
         </Content>
       </HomeContainer>
     </Container>
@@ -26,19 +31,6 @@ const Container = styled.div`
     position: fixed;
   }
 `
-
-const Typo = styled.div`
-    color: #c2272d;
-    font-weight: bold;
-    font-size: 36px;
-    padding: 25px 30px;
-    -webkit-text-stroke: 1px #ffffff;
-    text-align: center;
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
-
-}
-`;
 
 const HomeContainer = styled.div`
   position: relative;
@@ -61,6 +53,17 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 60%;
+  border: 2px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 50px;
+  justify-content: space-around;
+  border-radius: 25px;
+  left: 10%;
+  top: 15%;
+  h2{
+    color: #c2272d;
+  }
 `;
