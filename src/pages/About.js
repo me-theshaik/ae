@@ -35,10 +35,14 @@ const Container = styled.div`
 const HomeContainer = styled.div`
   position: relative;
   height: 100vh;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    min-height: 100vh;
+  }
 `;
 
 const BackgroundVideo = styled.video`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -49,20 +53,27 @@ const BackgroundVideo = styled.video`
 const Content = styled.div`
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  height: 60%;
+  display: inline-block;
+  max-width: 70%;
+  min-height: 60%;
   border: 2px solid #ffffff;
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   padding: 50px;
   border-radius: 25px;
-  left: 10%;
+  text-align: justify;
   top: 15%;
   h2{
     color: #c2272d;
+  }
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    top: 30%;
+    h2{
+      font-size: 14px; 
+    }
+    p{
+      font-size: 12px;
+    }
   }
 `;
